@@ -1,12 +1,10 @@
 SQL KING
 
-============
-
 [![GitHub Stars](https://img.shields.io/badge/By%20D3_D00M-8A2BE2)](https://github.com/yourusername/SQLKing/stargazers) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yourusername/SQLKing)
 
 SQLKing is a powerful tool developed by Dr. Doom, designed to assist attackers in identifying SQL Injection (SQLi) vulnerabilities in websites. It automates the process of finding vulnerable targets within specific regions, minimizing manual testing. SQLKing will evolve with future updates adding new techniques to enhance its capabilities.
 
-![Chat Preview](http://i.imgur.com/lgRe8z4.png)
+![Chat Preview](./lib/pic.png "tool runing")
 
 ---
 
@@ -14,29 +12,25 @@ SQLKing is a powerful tool developed by Dr. Doom, designed to assist attackers i
 
 If you use this tool, find it helpful, or just want to support its development, consider buying me a coffee! Your support will help me dedicate more time to open-source projects like SQLKing :)
 
-[ahref=&#34;https://www.buymeacoffee.com/drdoom&#34;target=&#34;_blank&#34;](ahref=%22https://www.buymeacoffee.com/drdoom%22target=%22_blank%22)<imgsrc="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"alt="Buy Me A Coffee"style="height: auto !important;width: auto !important;">`</a>`
+<a href="https://www.buymeacoffee.com/drdoom" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;">
+</a>
+
 
 ## How To Use
 
 ```bash
 
 # Clone this repository
-
 $ git clone https://github.com/Saad-Ayady/SqlKing.git
 
-
 # Go into the repository
-
 $ cd SqlKing
 
-
 # Chang Chmod
-
 $ chmod +x sqlking.py
 
-
 # Run the app
-
 $ npm start
 
 ```

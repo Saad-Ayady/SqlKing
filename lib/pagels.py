@@ -52,4 +52,12 @@ In future releases, we will add several new techniques to make the tool more com
 Usage: python3 sqlking.py <DORK> (MAX PAGES)"
     ex : python3 sqlking.py 'inurl:".php?id=" site:".dz"' 200
     ex : python3 sqlking.py 'inurl:".php?id=" site:".dz"'
+Options:
+    -h, --help          Show this help message and exit
+    -v, --version       Show version
+    -n, --name          Show tool name
+    -a, --author        Show author
+    -d, --description   Show description
+    -l, --license       Show license
+    -u, --last-update   Show last update
 """

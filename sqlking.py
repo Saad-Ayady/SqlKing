@@ -10,46 +10,48 @@ from lib.pagels import Panels
 init(autoreset=True)
 
 def handlet_args():
-    if len(argv) >= 3:
-        Panels.get_help()
+    panel = Panels()
+    if len(argv) > 3 or len(argv) == 1:
+        print(panel.get_help())
         exit(1)
-    elif len(argv) == 1:
+    elif len(argv) == 2:
         if argv[1] == "-h" or argv[1] == "--help":
-            Panels.get_help()
+            print(panel.get_help())
             exit(1)
         if argv[1] == "-v" or argv[1] == "--version":
-            print(f"{Style.BRIGHT }SQLKing Version: {Panels.get_version()}")
+            print(f"{Style.BRIGHT }SQLKing Version: {panel.get_version()}")
             exit(1)
         if argv[1] == "-n" or argv[1] == "--name":
-            print(f"{Style.BRIGHT }Tool Name: {Panels.get_name()}")
+            print(f"{Style.BRIGHT }Tool Name: {panel.get_name()}")
             exit(1)
         if argv[1] == "-a" or argv[1] == "--author":
-            print(f"{Style.BRIGHT }Author: {Panels.get_author()}")
+            print(f"{Style.BRIGHT }Author: {panel.get_author()}")
             exit(1)
         if argv[1] == "-d" or argv[1] == "--description":
-            print(f"{Style.BRIGHT }Description: {Panels.get_description()}")
+            print(f"{Style.BRIGHT }Description: {panel.get_description()}")
             exit(1)
         if argv[1] == "-l" or argv[1] == "--license":
-            print(f"{Style.BRIGHT }License: {Panels.get_license()}")
+            print(f"{Style.BRIGHT }License: {panel.get_license()}")
             exit(1)
         if argv[1] == "-u" or argv[1] == "--last-update":
-            print(f"{Style.BRIGHT }Last Update: {Panels.get_last_update()}")
+            print(f"{Style.BRIGHT }Last Update: {panel.get_last_update()}")
             exit(1)
         else:
             dork = argv[1]
             pages = None
-    elif len(argv) == 2:
+    elif len(argv) == 3:
         dork = argv[1]
         pages = int(argv[2])
     else:
-        Panels.get_help()
+        print(panel.get_help())
         exit(1)
     return dork, pages
 
 try :
+    handlet_args()
     panel = Panels()
     print(panel.panel())
-    dork,panel = handlet_args()
+    dork,pages = handlet_args()
     res = google(dork,pages)
     res+= yahoo(dork,pages) 
     res+= duckduckgo(dork,pages)
