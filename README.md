@@ -1,4 +1,4 @@
-SQL KING
+# SQL KING
 
 [![GitHub Stars](https://img.shields.io/badge/By%20D3_D00M-8A2BE2)](https://github.com/yourusername/SQLKing/stargazers) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yourusername/SQLKing)
 
