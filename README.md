@@ -30,8 +30,8 @@ $ cd SqlKing
 # Chang Chmod
 $ chmod +x sqlking.py
 
-# Run the app
-$ npm start
+# Run the tool
+$ python3 sqlking.py 'inurl:".php?id=" site:".dz"' 200
 
 ```
 
